@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  background: url('../../images/bg-pattern-top-mobile.svg') 0 0 no-repeat, url('../../images/bg-pattern-bottom-mobile.svg') right 0 bottom 0 no-repeat;
+
+  @include breakpoint {
+    min-height: 100vh;
+    background: url('../../images/bg-pattern-top-desktop.svg') 0 0 no-repeat, url('../../images/bg-pattern-bottom-desktop.svg') right 0 bottom 0 no-repeat;
+  }
+}
+
+main {
+  padding: 82px 24px 99px;
+
+  @include breakpoint {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 131px 0 0;
+  }
+}
